@@ -2,12 +2,20 @@
 //add query selector to local storage cuz the other is
 //local
 
-// let timer = document.querySelector(".timer-paragraph");
-// let date = Date.toString();
-// console.log(date);
-// setInterval(() => {
-//   timer.innerHTML = date;
-// }, 1000);
+let timer = document.querySelector(".timer-paragraph");
+
+setInterval(func, 1000);
+function func() {
+  let d = new Date();
+  timer.innerHTML = `<p>The time is -
+  
+    ${d.getHours()} 
+    : 
+    ${d.getMinutes()} 
+    : 
+    ${d.getSeconds()} </p>`;
+  console.log(d.getHours(), d.getMinutes(), d.getSeconds());
+}
 
 document.body.addEventListener("keydown", (event) => {
   //console.log(event.key);
