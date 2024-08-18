@@ -17,6 +17,8 @@ document.body.addEventListener("keydown", (event) => {
     playGame("paper");
   } else if (event.key === "s") {
     playGame("scissors");
+  } else if (event.key === "a") {
+    autoPlay();
   }
 });
 function switchMode() {
