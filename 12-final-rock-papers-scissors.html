@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock paper scissors</title>
+  <link rel="stylesheet" href="12-rock-paper-scissors.css">
+</head>
+<body>
+    <div class = ''>   
+      <h1> Rock Paper Scissors </h1>
+        <label class="switch js-btn-switch" > 
+          <input type="checkbox" onclick="switchMode()" >
+          
+          <span class="slider round"></span>
+        </label>
+     
+        <p> Shortcuts : <br> P : Paper <br>R : Rock <br>S : Scissors</p>
+    </div>
+   
+    <div>
+        <!-- <button onclick="playGame('rock');" class="btn-auto js-rock-btn"> -->
+          <button class="btn-auto js-rock-btn">
+          <img src="images/rock-emoji.png" 
+          class="move-icn">
+        </button>
+        <button class="btn-auto js-paper-btn">
+          <!-- <button onclick="playGame('paper');" class="btn-auto js-paper-btn"> -->
+          <img src="images/paper-emoji.png" 
+          class="move-icn">
+        </button>
+        <!-- <button onclick="playGame('scissors'); " class="btn-auto js-scissors-btn" > -->
+          <button  class="btn-auto js-scissors-btn" > 
+            <img src="images/scissors-emoji.png" alt="scissor"
+            class="move-icn">
+        </button>
+      </div>
+    
+        <div>
+          <p class = "phase">You 
+            <img src="images/rock-emoji.png" alt="rock" class="move-icn">
+            <img src="images/paper-emoji.png" alt="paper" class="move-icn">
+            Computer
+          </p>
+        </div>
+        <div> 
+              <p class = "res">Result :</p>
+        </div>
+         
+      </div>
+        <div><p class="gg"> </p></div>
+      <div>
+          <button onclick="reset()" class="btn-auto" >
+            <p>Reset<p></button>
+            <button onclick="autoPlay()" class="js-autoplay-btn btn-auto">
+              <p>Auto-Play</p></button>
+      </div>
+      
+    </div>
+    <script src="12-rock-paper-scissors.js"> </script>
+
+</body>
+</html>
